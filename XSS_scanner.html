@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>XSS__scanner</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="/xhr.js"></script>
+    <script type="text/javascript" src="/dinamic.js"></script>
+    <script type="text/javascript" src="/post.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+</head>
+<body>    
+    
+    <!--    BARRA DI NAVIGAZIONE     -->
+ <div class="head_bar">
+      
+      <h2 id="logo"><a href="http://localhost:8083/">XSS__scanner</a></h2>
+      
+      <p class="description_head">applicazione per trovare vulnerabilità cross-site scripting</p>
+      
+    </div>
+  <div class="topnav">
+  <a href="/">HOME</a>
+  <a href="/guida.html">GUIDA</a>
+   </div> 
+    <!---->
+    
+    <!--    HEADER DELLA PAGINA     -->
+   <div class="center_page"> 
+      <div class="list_container">
+        <label>
+           <p class="description">
+             Inerisci uno o più url separati da un ritorno a capo, i documenti associati ad essi
+             verranno analizzati,</br>terminata l'operazione ti verranno restituiti i report d'analisi.
+           </p>
+        </label>
+      </div>
+      
+      <!--   LISTA DI URL    -->
+     
+     <div class="list_container">
+        <label>
+           <textarea placeholder="inserisci una lista di url..." id="list"></textarea>
+        </label>
+     </div>
+     
+     <div class="button_container">
+        <select id="type">
+           <option value='simple'>scansione semplice</option>
+           <option value='advanced'>scansione avanzata</option>
+        </select>
+        
+        <input type="button" name="submit" value="OK" onclick="send_address();" class="button">
+     </div>
+     
+     <div id="report_container">
+     </div>
+     
+     <!--     FOOTER DELLA PAGINA     -->
+     
+     <div class="footer">
+        <footer>
+           <cite>progetto di programmazione web e mobile A/A 2018/2019 Francesco Minetti corso di laurea in sicurezza dei sistemi e delle reti informatiche</cite>
+        </footer>
+     </div>
+   </div>
+</body>
+</html>
