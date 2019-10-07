@@ -23,7 +23,7 @@ node modules needed:
 for using the tool:
 
  - in a console: node proxy_server.js
- - open XSS_scanner.html in your browser
+ - in the browser reach: localhost:8083
  - insert the url(s) you have to analyzed in the textarea(each one terminated by the '\n')
  - select the type of scan(simple or advanced)
  - launch the scan
