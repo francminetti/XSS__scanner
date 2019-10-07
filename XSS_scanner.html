@@ -4,10 +4,10 @@
 <head>
     <title>XSS__scanner</title>
     <meta charset="utf-8">
-    <script type="text/javascript" src="/xhr.js"></script>
-    <script type="text/javascript" src="/dinamic.js"></script>
-    <script type="text/javascript" src="/post.js"></script>
-    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <script type="text/javascript" src="./xhr.js"></script>
+    <script type="text/javascript" src="./dinamic.js"></script>
+    <script type="text/javascript" src="./post.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
 <body>    
     
@@ -16,12 +16,12 @@
       
       <h2 id="logo"><a href="http://localhost:8083/">XSS__scanner</a></h2>
       
-      <p class="description_head">applicazione per trovare vulnerabilità cross-site scripting</p>
+      <p class="description_head"> localhost application for finding reflected xss vulnerabilities </p>
       
     </div>
   <div class="topnav">
   <a href="/">HOME</a>
-  <a href="/guida.html">GUIDA</a>
+  <a href="/guida.html">GUIDE</a>
    </div> 
     <!---->
     
@@ -30,8 +30,8 @@
       <div class="list_container">
         <label>
            <p class="description">
-             Inerisci uno o più url separati da un ritorno a capo, i documenti associati ad essi
-             verranno analizzati,</br>terminata l'operazione ti verranno restituiti i report d'analisi.
+             Enter one or more URLs separated by a carriage return, the documents associated with them
+              will be analyzed, </br> after the operation you will be returned with the analysis reports.
            </p>
         </label>
       </div>
@@ -46,8 +46,8 @@
      
      <div class="button_container">
         <select id="type">
-           <option value='simple'>scansione semplice</option>
-           <option value='advanced'>scansione avanzata</option>
+           <option value='simple'>simple scan</option>
+           <option value='advanced'>advanced scan</option>
         </select>
         
         <input type="button" name="submit" value="OK" onclick="send_address();" class="button">
@@ -60,7 +60,7 @@
      
      <div class="footer">
         <footer>
-           <cite>progetto di programmazione web e mobile A/A 2018/2019 Francesco Minetti corso di laurea in sicurezza dei sistemi e delle reti informatiche</cite>
+           <cite> web and mobile programming exam project Accademic year 2018/2019 Francesco Minetti degree course in Networks & Informatic Systems Security(UNIMI) </cite>
         </footer>
      </div>
    </div>

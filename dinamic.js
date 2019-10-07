@@ -1,38 +1,38 @@
-                /* DINAMIC */                   /* codice javascript per la gestione dei contenuti dinamici della pagnia(report) */
+                /* DINAMIC */                   /* javascript code for managing dynamic content of the page (report) */
                         
                                                    
 
-var list_array = [];    /* array per tenere in memoria gli url della lista */
+var list_array = [];    /* array to keep memory of the urls in the list */
 
 /*********************************************************************************************************
-*   funzione per la creazione dell' array di url e l'aggiunta nel dom dei relativi spazi dei reprot.     *
+*   function for creating the url array and adding relative reprot spaces in the dom.				     *
 *********************************************************************************************************/
 
 function make_list()
 {
-    var button = document.getElementsByClassName('button')[0];                 /* disabilita momentaneamente il bottone di invio dati */
+    var button = document.getElementsByClassName('button')[0];                 /* momentarily disables the button to send data */
     button.setAttribute('disabled', 'true');
     
-    var refresh_button = document.createElement('input');                                                /* crea ed inserisce nel DOM un bottone con il quale fare il refresh della pagina */
+    var refresh_button = document.createElement('input');                                                /* creates and inserts in the DOM a button with which to refresh the page */
     refresh_button.setAttribute('type', 'button');
-    refresh_button.setAttribute('value', "effettua un'altra scansione");
+    refresh_button.setAttribute('value', "do another scan");
     refresh_button.setAttribute('onclick', "window.open('http://localhost:8083', '_self', false);");
     
     button.parentNode.appendChild(refresh_button);
     
-    var list = document.getElementById('list');                             /* recupera l'oggetto textarea dal DOM */
+    var list = document.getElementById('list');                             /* retrieves the textarea object from the DOM */
    
-    var list_container = document.getElementById('report_container');       /* recupera l'oggetto div (che conterrà i report) dal DOM */
-    var i;                                                                  /* indice dei cicli */
+    var list_container = document.getElementById('report_container');       /* retrieves the div object (which will contain the reports) from the DOM */
+    var i;                                                                  /* index of cicles */
     
-    list_array = list.value.match(/([^\n]+\n)/g);                           /* salva in un array tutti gli url nella lista */
+    list_array = list.value.match(/([^\n]+\n)/g);                           /* save all the urls of the list in an array */
     
     if(list_array == null)
     {
         console.log('errore: lista di url vuota...');
     }
     
-    for(i = 0; i < list_array.length; i++)                                  /* per ogni url della lista insersci nel DOM l'opportuno spazio dei report */
+    for(i = 0; i < list_array.length; i++)                                  /* for each url of the list, insert the appropriate report space in the DOM */
     {
         list_container.innerHTML += ('<p class="url_report_container" id="url' + i + '">' + filter(list_array[i]) + '</p>');
     }
@@ -40,7 +40,7 @@ function make_list()
 
 
 /*****************************************************************************************
-*   funzione per filtrare caratteri 'speciali' in input che andranno a finire nell'HTML. *
+*   function to filter 'special' input characters that will end up in HTML.				 *
 *****************************************************************************************/
 
 function filter(string)
@@ -54,7 +54,7 @@ function filter(string)
 }
 
 /*************************************************************************
-*   funzione per la modifica degli spazi relativi ai report vulnerablli  *
+*   function for changing the spaces related to vulnerable reports	     *
 *************************************************************************/
 
 function make_report(n, input_name)
@@ -90,7 +90,7 @@ function make_report(n, input_name)
 }
 
 /****************************************************************************
-*   funzione che gstisce l'evento click sui report vulnerabili              *
+*   function for changing the spaces related to vulnerable reports          *
 ****************************************************************************/
 
 function expand()

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>XSS__scanner</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+<body>    
+    
+    <!--    BARRA DI NAVIGAZIONE     -->
+ <div class="head_bar">
+      
+      <h2 id="logo"><a href="http://localhost:8083/">XSS__scanner</a></h2>
+      
+      <p class="description_head"> localhost application that scan for xss vulnerabilities </p>
+      
+    </div>
+  <div class="topnav">
+  <a href="/">HOME</a>
+  <a href="/guida.html">GUIDE</a>
+   </div> 
+    
+    <!--    BODY DELLA PAGINA     -->
+   <div class="center_page"> 
+     
+             <p class="text_guide"><br/><br/>This application was created with the aim of automating the discovery of XSS flaws in web applications(at least the simplest cases).
+             The application can scan for reflected xss via GET form vulnerabilities.
+             In order to function correctly, the URLs entered in the specific area must refer to pages where authentication is not required.
+             For more info about the elaboration you can open the browser console, in this area will be visualized the following: </p>
+             
+             <ul class="description_guide">
+                <li class="description_guide"> link within the injected Javascript </li>
+                <li class="description_guide"> number of form analyzed during the scan </li>
+                <li class="description_guide"> info about the success of the injection </li>
+                <li class="description_guide"> info about times that the Javascript is reflected into the page analyzed </li>
+             </ul>
+             
+            
+            <p class="text_guide">The processing is synchronous and the end of the processing is expected for correct operation. 
+            There are two modes of execution: simple and advanced.
+            In the simple scan, an attempt is made to inject code through the correct form parameter.
+            In advanced scanning an injection is attempted for all the parameters of the querystring, and an injection is also attempted
+            encoded in hexadecimal and decimal, in all its possible forms.
+            Once the processing is finished, all the URLs that are found to be vulnerable will appear in red, and by clicking on them you can consult
+            the reports, which will contain information regarding which parameters are found to be vulnerable.
+            All the URLs that turned out to be <b> not </b> vulnerable will appear in white.
+			</p>
+          
+        
+      </div>
+      
+     
+     <!--     FOOTER DELLA PAGINA     -->
+     
+     <div class="footer">
+        <footer>
+           <cite> web and mobile programming exam project Accademic year 2018/2019 Francesco Minetti degree course in Networks & Informatic Systems Security(UNIMI) </cite>
+        </footer>
+     </div>
+   </div>
+</body>
+</html>

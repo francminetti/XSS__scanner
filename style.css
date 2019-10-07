@@ -1,4 +1,4 @@
-/* stile per il body */
+/* style for the body */
 
 body
 {
@@ -8,7 +8,7 @@ body
     background: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6397246.jpg") repeat;
 }
 
-/* stile per il footer */
+/* style for the footer */
 
 footer
 {
@@ -18,13 +18,13 @@ footer
     text-align:center;
     border-radius: 8px;
     border: 1px solid black;
-    height: 23px;
+    height: 50px;
     width: 1000px;
     margin: auto;
     opacity: 0.84;
 }
 
-/* stile per la textarea */
+/* style for the textarea */
 
 textarea
 {
@@ -40,7 +40,7 @@ textarea
     max-width: 100%;
 }
 
-/* stile per il select */
+/* style for the select select */
 
 select
 {
@@ -48,7 +48,7 @@ select
     border: solid #333 1px;
 }
 
-/* stile per gli input di tipo button */
+/* style for the button type input */
 
 input[type=button]
 {
@@ -56,7 +56,7 @@ input[type=button]
     border: solid #333 2px;
 }
 
-/* stile per il logo */
+/* style for the logo id */
 
 #logo
 {
@@ -67,7 +67,7 @@ input[type=button]
     text-align: center;
 }
 
-/* stile per gli elementi ancora */
+/* style for the anchore elements */
 
 a
 {
@@ -76,7 +76,7 @@ a
     text-decoration: none;
 }
 
-/* unica proprietà di stil di gran parte dei paragrafi *//* ridefinita per certi paragrafi */
+/* property of the most part of paragraphs */
 
 p
 {
@@ -91,7 +91,7 @@ p
     margin-top: 0px;
 }
 
-/* stile per il testo di descrizione */
+/* style for the class desciption */
 
 .description
 {
@@ -103,7 +103,7 @@ p
     color: black;
 }
 
-/* caratteristiche comuni di stile per gli elementi textarea e testo di descrizione */
+/* common style features for the textarea elements and some description */
 
 .list_container
 {
@@ -112,7 +112,7 @@ p
     text-align: center;
 }
 
-/* caratteristiche comuni di stile per il contenitore dei select e dei bottoni */
+/* common style features for the container of select and button elements */
 
 .button_container
 {
@@ -121,7 +121,7 @@ p
     text-align: center;
 }
 
-/* stile per i contenitori degli url */
+/* style for the URL container */
 
 .url_report_container
 {
@@ -134,7 +134,7 @@ p
     opacity: 0.9;
 }
 
-/* stile per il contenitore del report testuale */
+/* style for the textual report container */
 
 .text_report_container
 {
@@ -146,14 +146,14 @@ p
   margin-top: 10px;
 }
 
-/* stile per nascondere oggetti del DOM */
+/* class for hiding elements o f the DOM via dinamic Javascript */
 
 .hide
 {
   display: none;
 }
 
-/* stile per la parte centrale della pagina */
+/* style for the central part of the page */
 
 .center_page
 {
@@ -167,7 +167,7 @@ p
     border-bottom: solid black 1px;
 }
 
-/* stile per il testo di descrizione */
+/* style for the description header */
 
 .description_head
 {
@@ -178,14 +178,14 @@ p
     padding-bottom: 0px;
 }
 
-/* stile per la barra di navigazione */
+/* style for the navigation bar */
 
 .topnav {
   background-color: #333;
   overflow: hidden;
 }
 
-/* stile per i link all'interno della barra di navigazione */
+/* style for the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -195,13 +195,13 @@ p
   font-size: 17px;
 }
 
-/* stile per il cambio di colore dei link nella barra di navigazione */
+/* style for the color change of the links inside the navigation bar */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* stile per il testo nella pagina guida */
+/* style for the guide page */
 .description_guide
 {
     font-family: "Lucida Console", sans-serif;
@@ -214,7 +214,7 @@ p
     text-align: left;
 }
 
-/* stile per il testo della guida */
+/* style for the text inside the guide page */
 
 .text_guide
 {
